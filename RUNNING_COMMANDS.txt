@@ -1,0 +1,48 @@
+==================================================
+        ACADEMIC WEB APPLICATION - RUN COMMANDS
+==================================================
+
+PREREQUISITES:
+1.  Node.js installed.
+2.  Supabase Project set up.
+3.  'server/.env' file configured with:
+    - PORT=5001
+    - SUPABASE_URL
+    - SUPABASE_KEY
+    - SUPABASE_SERVICE_ROLE_KEY
+    - JWT_SECRET
+
+--------------------------------------------------
+STEP 1: DATABASE SETUP (One time only)
+--------------------------------------------------
+Run the following SQL scripts in your Supabase SQL Editor:
+1.  server/schema.sql
+2.  server/migration_user_details.sql
+
+--------------------------------------------------
+STEP 2: START BACKEND SERVER
+--------------------------------------------------
+Open a terminal and run:
+
+    cd server
+    npm install
+    npm start
+
+* Server runs at: http://localhost:5001
+
+--------------------------------------------------
+STEP 3: START FRONTEND CLIENT
+--------------------------------------------------
+Open a *new* terminal window (do not close the server terminal) and run:
+
+    cd client
+    npm install
+    npm run dev
+
+* Client runs at: http://localhost:5173
+
+==================================================
+USER CREDENTIALS
+==================================================
+Admin:  a.vishnuvardhanreddy01@gmail.com (Default Admin)
+Student: Any email ending in @gprec.ac.in
